@@ -14,8 +14,7 @@ test('generateAndWriteAddressLists separates IPv4 and IPv6 addresses', async (t)
 
   const tempFiles = [
     './github-ipv4-list.rsc',
-    './github-ipv6-list.rsc',
-    './github-ipall-list.rsc'
+    './github-ipv6-list.rsc'
   ];
 
   // Clean up any existing test files
@@ -56,12 +55,17 @@ test('generateAndWriteAddressLists separates IPv4 and IPv6 addresses', async (t)
       assert.ok(content.length > 0, `${file} should not be empty`);
     }
 
-    // Verify combined list format
-    const combined = fs.readFileSync('./github-ipall-list.rsc', 'utf-8');
-    assert.ok(combined.includes('/ip firewall address-list'));
-    assert.ok(!combined.includes('/ipv6 firewall address-list'));
-    assert.ok(combined.includes('192.0.2.1/32'));
-    assert.ok(combined.includes('2001:db8::1/128'));
+    // Verify IPv4 file content
+    const ipv4File = fs.readFileSync('./github-ipv4-list.rsc', 'utf-8');
+    assert.ok(ipv4File.includes('/ip firewall address-list'));
+    assert.ok(ipv4File.includes('192.0.2.1/32'));
+    assert.ok(!ipv4File.includes('2001:db8::1/128'));
+
+    // Verify IPv6 file content
+    const ipv6File = fs.readFileSync('./github-ipv6-list.rsc', 'utf-8');
+    assert.ok(ipv6File.includes('/ipv6 firewall address-list'));
+    assert.ok(ipv6File.includes('2001:db8::1/128'));
+    assert.ok(!ipv6File.includes('192.0.2.1/32'));
 
   } finally {
     // Clean up test files
