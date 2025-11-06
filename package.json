@@ -1,0 +1,26 @@
+{
+  "name": "ghosts",
+  "version": "1.0.0",
+  "description": "get latest github hosts.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazywalker/ghosts.git"
+  },
+  "keywords": [
+    "githb",
+    "hosts"
+  ],
+  "author": "lazywalker",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/lazywalker/ghosts/issues"
+  },
+  "homepage": "https://github.com/lazywalker/ghosts#readme",
+  "dependencies": {}
+}
