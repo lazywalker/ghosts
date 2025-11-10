@@ -65,6 +65,9 @@ test('generateRsc deduplicates and handles IPv4/IPv6', () => {
     { ip: '2001:db8::1' },
   ];
   const rsc = generateRsc(configs, 'test-list');
+  // should include IPv4 prefix and IPv6 prefix
+  assert.ok(rsc.includes('/ip firewall address-list'));
+  assert.ok(rsc.includes('/ipv6 firewall address-list'));
   assert.ok(rsc.includes('add address=1.2.3.4/32 list=test-list'));
   assert.ok(rsc.includes('add address=2001:db8::1/128 list=test-list'));
   const occurrences = (rsc.match(/1\.2\.3\.4\/32/g) || []).length;

@@ -13,9 +13,9 @@ test('integration: write files to temp dir and verify contents', async (t) => {
   try {
     process.chdir(dir);
 
-    // create a minimal README.template.md expected by writeHosts
-    const tpl = '# Demo\n\n{{hosts}}\n\nLast: {{last_update_time}}';
-    fs.writeFileSync(path.join(dir, 'README.template.md'), tpl, 'utf-8');
+  // create a minimal README.tpl.md expected by writeHosts
+  const tpl = '# Demo\n\n{{hosts}}\n\nLast: {{last_update_time}}';
+  fs.writeFileSync(path.join(dir, 'README.tpl.md'), tpl, 'utf-8');
 
     // sample configs with multiple addresses (v4 and v6)
     const configs = [
@@ -53,9 +53,12 @@ test('integration: write files to temp dir and verify contents', async (t) => {
     assert.ok(mdns.includes('2606:50c0:8000::154'));
 
     // Verify github-ip-list.rsc contains aggregated/add entries for unique ips
-    const rsc = fs.readFileSync(path.join(dir, 'github-ip-list.rsc'), 'utf-8');
-    assert.ok(rsc.includes('add address=185.199.108.133/32'));
-    assert.ok(rsc.includes('add address=2606:50c0:8000::154/128'));
+  const rsc = fs.readFileSync(path.join(dir, 'github-ip-list.rsc'), 'utf-8');
+  // IPv4 and IPv6 sections should be present
+  assert.ok(rsc.includes('/ip firewall address-list'));
+  assert.ok(rsc.includes('/ipv6 firewall address-list'));
+  assert.ok(rsc.includes('add address=185.199.108.133/32'));
+  assert.ok(rsc.includes('add address=2606:50c0:8000::154/128'));
 
     // Verify RouterOS DNS file exists and has both sections
     const dns = fs.readFileSync(path.join(dir, 'github-dns-list.rsc'), 'utf-8');
