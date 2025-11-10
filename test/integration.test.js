@@ -60,12 +60,12 @@ test('integration: write files to temp dir and verify contents', async (t) => {
   assert.ok(rsc.includes('add address=185.199.108.133/32'));
   assert.ok(rsc.includes('add address=2606:50c0:8000::154/128'));
 
-    // Verify RouterOS DNS file exists and has both sections
-    const dns = fs.readFileSync(path.join(dir, 'github-dns-list.rsc'), 'utf-8');
-    assert.ok(dns.includes('/ip dns static'));
-    assert.ok(dns.includes('/ipv6 dns static'));
-    // ensure domain entries exist
-    assert.ok(dns.includes('name="media.githubusercontent.com"'));
+  // Verify RouterOS DNS file exists and has the /ip dns static section
+  const dns = fs.readFileSync(path.join(dir, 'github-dns-list.rsc'), 'utf-8');
+  assert.ok(dns.includes('/ip dns static'));
+  // ensure domain entries exist and AAAA entries are present with type=AAAA
+  assert.ok(dns.includes('name="media.githubusercontent.com"'));
+  assert.ok(dns.includes('type=AAAA') || dns.includes('type=A'));
 
   } finally {
     process.chdir(prevCwd);

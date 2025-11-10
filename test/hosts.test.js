@@ -106,23 +106,17 @@ test('generate functions handle multiple addresses per domain', () => {
 
   // RouterOS DNS should contain add lines for each domain+ip pair
   const dns = generateRouterOsDns(configs);
-  // should contain both IPv4 and IPv6 section headers
+
+  // RouterOS DNS should contain a single /ip dns static section with both A and AAAA records
   assert.ok(dns.includes('/ip dns static'));
-  assert.ok(dns.includes('/ipv6 dns static'));
-
-  // Split sections to ensure IPv4/IPv6 separation
-  const ipIdx = dns.indexOf('/ip dns static');
-  const ipv6Idx = dns.indexOf('/ipv6 dns static');
-  const ipSection = ipv6Idx > -1 ? dns.substring(ipIdx, ipv6Idx) : dns.substring(ipIdx);
-  const ipv6Section = ipv6Idx > -1 ? dns.substring(ipv6Idx) : '';
-
-  // IPv4 addresses should appear in ipSection and not IPv6 addresses
-  assert.ok(ipSection.includes('1.1.1.1'));
-  assert.ok(ipSection.includes('2.2.2.2'));
-  assert.ok(!ipSection.includes('2001:db8::1'));
-
-  // IPv6 addresses should appear in ipv6Section
-  assert.ok(ipv6Section.includes('2001:db8::1'));
+  // IPv4 addresses should appear
+  assert.ok(dns.includes('1.1.1.1'));
+  assert.ok(dns.includes('2.2.2.2'));
+  // IPv6 addresses should appear and be tagged as type=AAAA
+  assert.ok(dns.includes('2001:db8::1'));
+  assert.ok(dns.includes('type=AAAA'));
+  // IPv4 records should include type=A
+  assert.ok(dns.includes('type=A'));
 
   // Count occurrences of the domain 'multi' across both sections (should be 3 addresses)
   const occurrencesMulti = (dns.match(/name="multi"/g) || []).length;
