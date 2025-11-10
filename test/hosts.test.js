@@ -78,7 +78,7 @@ test('generateMdnsHosts outputs domain ip lines', () => {
 
 test('generate functions handle multiple addresses per domain', () => {
   const configs = [
-    { domain: 'multi', ip: '1.1.1.1', ips: ['1.1.1.1', '2.2.2.2'] },
+    { domain: 'multi', ip: '1.1.1.1', ips: ['1.1.1.1', '2.2.2.2', '2001:db8::1'] },
     { domain: 'single', ip: '3.3.3.3', ips: ['3.3.3.3'] },
     { domain: 'none', ip: '', ips: [] },
   ];
@@ -98,8 +98,27 @@ test('generate functions handle multiple addresses per domain', () => {
 
   // RouterOS DNS should contain add lines for each domain+ip pair
   const dns = generateRouterOsDns(configs);
+  // should contain both IPv4 and IPv6 section headers
+  assert.ok(dns.includes('/ip dns static'));
+  assert.ok(dns.includes('/ipv6 dns static'));
+
+  // Split sections to ensure IPv4/IPv6 separation
+  const ipIdx = dns.indexOf('/ip dns static');
+  const ipv6Idx = dns.indexOf('/ipv6 dns static');
+  const ipSection = ipv6Idx > -1 ? dns.substring(ipIdx, ipv6Idx) : dns.substring(ipIdx);
+  const ipv6Section = ipv6Idx > -1 ? dns.substring(ipv6Idx) : '';
+
+  // IPv4 addresses should appear in ipSection and not IPv6 addresses
+  assert.ok(ipSection.includes('1.1.1.1'));
+  assert.ok(ipSection.includes('2.2.2.2'));
+  assert.ok(!ipSection.includes('2001:db8::1'));
+
+  // IPv6 addresses should appear in ipv6Section
+  assert.ok(ipv6Section.includes('2001:db8::1'));
+
+  // Count occurrences of the domain 'multi' across both sections (should be 3 addresses)
   const occurrencesMulti = (dns.match(/name="multi"/g) || []).length;
-  assert.equal(occurrencesMulti, 2);
+  assert.equal(occurrencesMulti, 3);
   assert.ok(dns.includes('name="single"'));
   assert.ok(dns.includes('# none resolution failed'));
 });
