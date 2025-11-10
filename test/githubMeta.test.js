@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'fs';
+import path from 'path';
 import { generateAndWriteAddressLists, generateGithubMetaRsc } from '../lib/githubMeta.js';
 
 test('generateAndWriteAddressLists separates IPv4 and IPv6 addresses', async (t) => {
@@ -12,17 +13,15 @@ test('generateAndWriteAddressLists separates IPv4 and IPv6 addresses', async (t)
     packages: ['2001:db8::3/128']
   };
 
+  const tmpDir = './tmp';
   const tempFiles = [
-    './github-ipv4-list.rsc',
-    './github-ipv6-list.rsc'
+    path.join(tmpDir, 'github-ipv4-list.rsc'),
+    path.join(tmpDir, 'github-ipv6-list.rsc')
   ];
 
-  // Clean up any existing test files
-  tempFiles.forEach(file => {
-    if (fs.existsSync(file)) {
-      fs.unlinkSync(file);
-    }
-  });
+  // Prepare tmp directory
+  try { fs.rmSync(tmpDir, { recursive: true, force: true }); } catch (e) {}
+  fs.mkdirSync(tmpDir, { recursive: true });
 
   // Mock fetch function
   const mockFetch = async () => ({
@@ -33,7 +32,8 @@ test('generateAndWriteAddressLists separates IPv4 and IPv6 addresses', async (t)
   try {
     const { ipv4, ipv6 } = await generateAndWriteAddressLists({ 
       fetchFn: mockFetch,
-      listName: 'test-list'
+      listName: 'test-list',
+      outputDir: tmpDir
     });
 
     // Verify IPv4 content
@@ -56,24 +56,20 @@ test('generateAndWriteAddressLists separates IPv4 and IPv6 addresses', async (t)
     }
 
     // Verify IPv4 file content
-    const ipv4File = fs.readFileSync('./github-ipv4-list.rsc', 'utf-8');
+  const ipv4File = fs.readFileSync(path.join(tmpDir, 'github-ipv4-list.rsc'), 'utf-8');
     assert.ok(ipv4File.includes('/ip firewall address-list'));
     assert.ok(ipv4File.includes('192.0.2.1/32'));
     assert.ok(!ipv4File.includes('2001:db8::1/128'));
 
     // Verify IPv6 file content
-    const ipv6File = fs.readFileSync('./github-ipv6-list.rsc', 'utf-8');
-    assert.ok(ipv6File.includes('/ipv6 firewall address-list'));
-    assert.ok(ipv6File.includes('2001:db8::1/128'));
-    assert.ok(!ipv6File.includes('192.0.2.1/32'));
+  const ipv6File = fs.readFileSync(path.join(tmpDir, 'github-ipv6-list.rsc'), 'utf-8');
+  assert.ok(ipv6File.includes('/ipv6 firewall address-list'));
+  assert.ok(ipv6File.includes('2001:db8::1/128'));
+  assert.ok(!ipv6File.includes('192.0.2.1/32'));
 
   } finally {
-    // Clean up test files
-    tempFiles.forEach(file => {
-      if (fs.existsSync(file)) {
-        fs.unlinkSync(file);
-      }
-    });
+    // Clean up tmp dir
+    try { fs.rmSync(tmpDir, { recursive: true, force: true }); } catch (e) {}
   }
 });
 
@@ -88,10 +84,15 @@ test('generateGithubMetaRsc returns expected rsc content (deprecated)', async (t
     ok: true,
     json: async () => sampleMeta
   });
+  // Use a temp dir so deprecated function doesn't write to repo root
+  const tmpDir = './tmp-deprecated';
+  try { fs.rmSync(tmpDir, { recursive: true, force: true }); } catch (e) {}
+  fs.mkdirSync(tmpDir, { recursive: true });
 
   const rsc = await generateGithubMetaRsc({ 
     fetchFn: mockFetch, 
-    listName: 'test-list' 
+    listName: 'test-list',
+    outputDir: tmpDir,
   });
 
   assert.ok(rsc.includes('# Auto-generated MikroTik address list – GitHub IPs'));
@@ -108,7 +109,9 @@ test('generateGithubMetaRsc returns expected rsc content (deprecated)', async (t
     ok: true, 
     json: async () => dupMeta 
   });
-  const dupRsc = await generateGithubMetaRsc({ fetchFn: mockDup });
+  const dupRsc = await generateGithubMetaRsc({ fetchFn: mockDup, outputDir: tmpDir });
   const occurrences = (dupRsc.match(/192\.0\.2\.1\/32/g) || []).length;
   assert.equal(occurrences, 1);
+  // clean up tmpDir
+  try { fs.rmSync(tmpDir, { recursive: true, force: true }); } catch (e) {}
 });
