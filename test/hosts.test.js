@@ -7,6 +7,7 @@ import {
   generateHosts,
   generateRsc,
   generateMdnsHosts,
+  generateRouterOsDns,
 } from '../lib/hosts.js';
 
 test('retry succeeds after failures', async () => {
@@ -23,11 +24,13 @@ test('retry succeeds after failures', async () => {
 test('getHostConfig returns ip on success and empty ip on failure', async () => {
   const lookupOk = async (domain) => ({ address: '1.2.3.4' });
   const ok = await getHostConfig('example.com', lookupOk, 2);
-  assert.deepEqual(ok, { domain: 'example.com', ip: '1.2.3.4' });
+  assert.equal(ok.domain, 'example.com');
+  assert.equal(ok.ip, '1.2.3.4');
 
   const lookupFail = async () => { throw new Error('nx'); };
   const fail = await getHostConfig('bad.example', lookupFail, 2);
-  assert.deepEqual(fail, { domain: 'bad.example', ip: '' });
+  assert.equal(fail.domain, 'bad.example');
+  assert.equal(fail.ip, '');
 });
 
 test('resolveUrls uses lookup function and returns array', async () => {
@@ -71,4 +74,32 @@ test('generateMdnsHosts outputs domain ip lines', () => {
   const out = generateMdnsHosts(configs);
   assert.ok(out.includes('a 1.1.1.1'));
   assert.ok(out.includes('# b resolution failed'));
+});
+
+test('generate functions handle multiple addresses per domain', () => {
+  const configs = [
+    { domain: 'multi', ip: '1.1.1.1', ips: ['1.1.1.1', '2.2.2.2'] },
+    { domain: 'single', ip: '3.3.3.3', ips: ['3.3.3.3'] },
+    { domain: 'none', ip: '', ips: [] },
+  ];
+
+  // mdns hosts should contain one line per domain/ip
+  const mdns = generateMdnsHosts(configs);
+  assert.ok(mdns.includes('multi 1.1.1.1'));
+  assert.ok(mdns.includes('multi 2.2.2.2'));
+  assert.ok(mdns.includes('single 3.3.3.3'));
+  assert.ok(mdns.includes('# none resolution failed'));
+
+  // rsc should include address-list entries for each unique ip
+  const rsc = generateRsc(configs, 'multi-list');
+  assert.ok(rsc.includes('add address=1.1.1.1/32 list=multi-list'));
+  assert.ok(rsc.includes('add address=2.2.2.2/32 list=multi-list'));
+  assert.ok(rsc.includes('add address=3.3.3.3/32 list=multi-list'));
+
+  // RouterOS DNS should contain add lines for each domain+ip pair
+  const dns = generateRouterOsDns(configs);
+  const occurrencesMulti = (dns.match(/name="multi"/g) || []).length;
+  assert.equal(occurrencesMulti, 2);
+  assert.ok(dns.includes('name="single"'));
+  assert.ok(dns.includes('# none resolution failed'));
 });
