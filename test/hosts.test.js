@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'fs';
 import {
   retry,
   getHostConfig,
@@ -48,8 +49,12 @@ test('generateHosts produces lines and timestamp', () => {
     { domain: 'two', ip: '' },
   ];
   const { hostStr, updateTime } = generateHosts(configs);
+  // header lines
+  assert.ok(hostStr.includes('# Auto-generated Github address list'));
+  assert.ok(hostStr.includes('# https://github.com/lazywalker/ghosts'));
+  // contains the IPv4 mapping and failure comment
   assert.ok(hostStr.includes('1.1.1.1'));
-  assert.ok(hostStr.includes('# two update failed'));
+  assert.ok(hostStr.includes('# two resolution failed'));
   assert.ok(typeof updateTime === 'string' && updateTime.length > 0);
 });
 
@@ -83,10 +88,10 @@ test('generate functions handle multiple addresses per domain', () => {
     { domain: 'none', ip: '', ips: [] },
   ];
 
-  // mdns hosts should contain one line per domain/ip
+  // mdns hosts should contain one line per domain/ip (A addresses followed by AAAA)
   const mdns = generateMdnsHosts(configs);
-  assert.ok(mdns.includes('multi 1.1.1.1'));
-  assert.ok(mdns.includes('multi 2.2.2.2'));
+  // ensure the multi domain line contains both IPv4 addresses in order
+  assert.ok(mdns.includes('multi 1.1.1.1 2.2.2.2'));
   assert.ok(mdns.includes('single 3.3.3.3'));
   assert.ok(mdns.includes('# none resolution failed'));
 
