@@ -1,134 +1,133 @@
 # Auto-generated MikroTik DNS list – GitHub IPs
 /ip dns static
-add comment="github" name="github.githubassets.com" address=185.199.108.154
-add comment="github" name="github.githubassets.com" address=185.199.109.154
-add comment="github" name="github.githubassets.com" address=185.199.110.154
-add comment="github" name="github.githubassets.com" address=185.199.111.154
-add comment="github" name="central.github.com" address=140.82.113.22
-add comment="github" name="desktop.githubusercontent.com" address=185.199.108.133
-add comment="github" name="desktop.githubusercontent.com" address=185.199.109.133
-add comment="github" name="desktop.githubusercontent.com" address=185.199.110.133
-add comment="github" name="desktop.githubusercontent.com" address=185.199.111.133
-add comment="github" name="camo.githubusercontent.com" address=185.199.111.133
-add comment="github" name="camo.githubusercontent.com" address=185.199.110.133
-add comment="github" name="camo.githubusercontent.com" address=185.199.108.133
-add comment="github" name="camo.githubusercontent.com" address=185.199.109.133
-add comment="github" name="github.map.fastly.net" address=185.199.108.133
-add comment="github" name="github.map.fastly.net" address=185.199.109.133
-add comment="github" name="github.map.fastly.net" address=185.199.110.133
-add comment="github" name="github.map.fastly.net" address=185.199.111.133
-add comment="github" name="github.global.ssl.fastly.net" address=146.75.29.194
-add comment="github" name="gist.github.com" address=140.82.113.4
-add comment="github" name="github.io" address=185.199.108.153
-add comment="github" name="github.io" address=185.199.109.153
-add comment="github" name="github.io" address=185.199.110.153
-add comment="github" name="github.io" address=185.199.111.153
-add comment="github" name="github.com" address=140.82.114.4
-add comment="github" name="api.github.com" address=140.82.114.5
-add comment="github" name="raw.githubusercontent.com" address=185.199.109.133
-add comment="github" name="raw.githubusercontent.com" address=185.199.110.133
-add comment="github" name="raw.githubusercontent.com" address=185.199.111.133
-add comment="github" name="raw.githubusercontent.com" address=185.199.108.133
-add comment="github" name="user-images.githubusercontent.com" address=185.199.110.133
-add comment="github" name="user-images.githubusercontent.com" address=185.199.111.133
-add comment="github" name="user-images.githubusercontent.com" address=185.199.108.133
-add comment="github" name="user-images.githubusercontent.com" address=185.199.109.133
-add comment="github" name="favicons.githubusercontent.com" address=185.199.108.133
-add comment="github" name="favicons.githubusercontent.com" address=185.199.109.133
-add comment="github" name="favicons.githubusercontent.com" address=185.199.110.133
-add comment="github" name="favicons.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars5.githubusercontent.com" address=185.199.108.133
-add comment="github" name="avatars5.githubusercontent.com" address=185.199.109.133
-add comment="github" name="avatars5.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars5.githubusercontent.com" address=185.199.110.133
-add comment="github" name="avatars4.githubusercontent.com" address=185.199.108.133
-add comment="github" name="avatars4.githubusercontent.com" address=185.199.110.133
-add comment="github" name="avatars4.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars4.githubusercontent.com" address=185.199.109.133
-add comment="github" name="avatars3.githubusercontent.com" address=185.199.108.133
-add comment="github" name="avatars3.githubusercontent.com" address=185.199.109.133
-add comment="github" name="avatars3.githubusercontent.com" address=185.199.110.133
-add comment="github" name="avatars3.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars2.githubusercontent.com" address=185.199.108.133
-add comment="github" name="avatars2.githubusercontent.com" address=185.199.109.133
-add comment="github" name="avatars2.githubusercontent.com" address=185.199.110.133
-add comment="github" name="avatars2.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars1.githubusercontent.com" address=185.199.108.133
-add comment="github" name="avatars1.githubusercontent.com" address=185.199.110.133
-add comment="github" name="avatars1.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars1.githubusercontent.com" address=185.199.109.133
-add comment="github" name="avatars0.githubusercontent.com" address=185.199.108.133
-add comment="github" name="avatars0.githubusercontent.com" address=185.199.109.133
-add comment="github" name="avatars0.githubusercontent.com" address=185.199.110.133
-add comment="github" name="avatars0.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars.githubusercontent.com" address=185.199.110.133
-add comment="github" name="avatars.githubusercontent.com" address=185.199.111.133
-add comment="github" name="avatars.githubusercontent.com" address=185.199.108.133
-add comment="github" name="avatars.githubusercontent.com" address=185.199.109.133
-add comment="github" name="codeload.github.com" address=140.82.113.9
-add comment="github" name="github-cloud.s3.amazonaws.com" address=16.15.196.20
-add comment="github" name="github-cloud.s3.amazonaws.com" address=52.217.106.44
-add comment="github" name="github-cloud.s3.amazonaws.com" address=3.5.25.110
-add comment="github" name="github-cloud.s3.amazonaws.com" address=52.217.135.217
-add comment="github" name="github-cloud.s3.amazonaws.com" address=3.5.25.136
-add comment="github" name="github-cloud.s3.amazonaws.com" address=16.182.69.1
-add comment="github" name="github-cloud.s3.amazonaws.com" address=52.216.62.41
-add comment="github" name="github-cloud.s3.amazonaws.com" address=54.231.201.137
-add comment="github" name="github-com.s3.amazonaws.com" address=3.5.16.18
-add comment="github" name="github-com.s3.amazonaws.com" address=3.5.21.204
-add comment="github" name="github-com.s3.amazonaws.com" address=54.231.200.81
-add comment="github" name="github-com.s3.amazonaws.com" address=54.231.133.105
-add comment="github" name="github-com.s3.amazonaws.com" address=52.217.114.9
-add comment="github" name="github-com.s3.amazonaws.com" address=16.182.71.41
-add comment="github" name="github-com.s3.amazonaws.com" address=16.182.64.97
-add comment="github" name="github-com.s3.amazonaws.com" address=16.15.181.45
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=3.5.21.204
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=54.231.200.81
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=54.231.133.105
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=52.217.114.9
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=16.182.71.41
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=16.182.64.97
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=16.15.181.45
-add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" address=3.5.16.18
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=54.231.136.121
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=52.217.114.217
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=3.5.29.177
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=52.217.125.113
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=3.5.25.204
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=16.15.184.14
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=52.216.218.153
-add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" address=52.216.140.164
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=52.217.133.161
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=52.216.56.121
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=16.15.182.20
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=52.216.218.49
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=3.5.17.43
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=3.5.0.123
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=16.182.98.25
-add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" address=16.15.178.147
-add comment="github" name="githubstatus.com" address=185.199.110.153
-add comment="github" name="githubstatus.com" address=185.199.108.153
-add comment="github" name="githubstatus.com" address=185.199.111.153
-add comment="github" name="githubstatus.com" address=185.199.109.153
-add comment="github" name="github.community" address=140.82.112.17
-add comment="github" name="media.githubusercontent.com" address=185.199.108.133
-add comment="github" name="media.githubusercontent.com" address=185.199.109.133
-add comment="github" name="media.githubusercontent.com" address=185.199.110.133
-add comment="github" name="media.githubusercontent.com" address=185.199.111.133
-/ipv6 dns static
-add comment="github" name="raw.githubusercontent.com" address=2606:50c0:8001::154
-add comment="github" name="raw.githubusercontent.com" address=2606:50c0:8000::154
-add comment="github" name="raw.githubusercontent.com" address=2606:50c0:8002::154
-add comment="github" name="raw.githubusercontent.com" address=2606:50c0:8003::154
-add comment="github" name="user-images.githubusercontent.com" address=2606:50c0:8001::154
-add comment="github" name="user-images.githubusercontent.com" address=2606:50c0:8000::154
-add comment="github" name="user-images.githubusercontent.com" address=2606:50c0:8002::154
-add comment="github" name="user-images.githubusercontent.com" address=2606:50c0:8003::154
-add comment="github" name="avatars.githubusercontent.com" address=2606:50c0:8000::154
-add comment="github" name="avatars.githubusercontent.com" address=2606:50c0:8001::154
-add comment="github" name="avatars.githubusercontent.com" address=2606:50c0:8002::154
-add comment="github" name="avatars.githubusercontent.com" address=2606:50c0:8003::154
-add comment="github" name="media.githubusercontent.com" address=2606:50c0:8001::154
-add comment="github" name="media.githubusercontent.com" address=2606:50c0:8000::154
-add comment="github" name="media.githubusercontent.com" address=2606:50c0:8003::154
-add comment="github" name="media.githubusercontent.com" address=2606:50c0:8002::154
+add comment="github" name="github.githubassets.com" type=A address=185.199.110.154
+add comment="github" name="github.githubassets.com" type=A address=185.199.111.154
+add comment="github" name="github.githubassets.com" type=A address=185.199.108.154
+add comment="github" name="github.githubassets.com" type=A address=185.199.109.154
+add comment="github" name="central.github.com" type=A address=140.82.113.22
+add comment="github" name="desktop.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="desktop.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="desktop.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="desktop.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="camo.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="camo.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="camo.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="camo.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="github.map.fastly.net" type=A address=185.199.108.133
+add comment="github" name="github.map.fastly.net" type=A address=185.199.109.133
+add comment="github" name="github.map.fastly.net" type=A address=185.199.110.133
+add comment="github" name="github.map.fastly.net" type=A address=185.199.111.133
+add comment="github" name="github.global.ssl.fastly.net" type=A address=146.75.93.194
+add comment="github" name="gist.github.com" type=A address=140.82.113.3
+add comment="github" name="github.io" type=A address=185.199.108.153
+add comment="github" name="github.io" type=A address=185.199.109.153
+add comment="github" name="github.io" type=A address=185.199.110.153
+add comment="github" name="github.io" type=A address=185.199.111.153
+add comment="github" name="github.com" type=A address=140.82.114.4
+add comment="github" name="api.github.com" type=A address=140.82.112.6
+add comment="github" name="raw.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="raw.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="raw.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="raw.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="raw.githubusercontent.com" type=AAAA address=2606:50c0:8002::154
+add comment="github" name="raw.githubusercontent.com" type=AAAA address=2606:50c0:8003::154
+add comment="github" name="raw.githubusercontent.com" type=AAAA address=2606:50c0:8000::154
+add comment="github" name="raw.githubusercontent.com" type=AAAA address=2606:50c0:8001::154
+add comment="github" name="user-images.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="user-images.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="user-images.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="user-images.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="user-images.githubusercontent.com" type=AAAA address=2606:50c0:8000::154
+add comment="github" name="user-images.githubusercontent.com" type=AAAA address=2606:50c0:8001::154
+add comment="github" name="user-images.githubusercontent.com" type=AAAA address=2606:50c0:8002::154
+add comment="github" name="user-images.githubusercontent.com" type=AAAA address=2606:50c0:8003::154
+add comment="github" name="favicons.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="favicons.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="favicons.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="favicons.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars5.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="avatars5.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars5.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="avatars5.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="avatars4.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="avatars4.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="avatars4.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="avatars4.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars3.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="avatars3.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="avatars3.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="avatars3.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars2.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="avatars2.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="avatars2.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="avatars2.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars1.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="avatars1.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="avatars1.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars1.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="avatars0.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="avatars0.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="avatars0.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars0.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="avatars.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="avatars.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="avatars.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="avatars.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="avatars.githubusercontent.com" type=AAAA address=2606:50c0:8000::154
+add comment="github" name="avatars.githubusercontent.com" type=AAAA address=2606:50c0:8001::154
+add comment="github" name="avatars.githubusercontent.com" type=AAAA address=2606:50c0:8002::154
+add comment="github" name="avatars.githubusercontent.com" type=AAAA address=2606:50c0:8003::154
+add comment="github" name="codeload.github.com" type=A address=140.82.114.10
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=16.15.200.201
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=52.216.44.209
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=52.216.218.33
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=52.216.56.97
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=52.216.114.155
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=52.216.34.193
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=54.231.136.177
+add comment="github" name="github-cloud.s3.amazonaws.com" type=A address=52.217.126.113
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=52.216.44.209
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=52.216.218.33
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=52.216.56.97
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=52.216.114.155
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=52.216.34.193
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=54.231.136.177
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=52.217.126.113
+add comment="github" name="github-com.s3.amazonaws.com" type=A address=16.15.200.201
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=52.216.218.33
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=52.216.56.97
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=52.216.114.155
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=52.216.34.193
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=54.231.136.177
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=52.217.126.113
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=16.15.200.201
+add comment="github" name="github-production-release-asset-2e65be.s3.amazonaws.com" type=A address=52.216.44.209
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=52.217.192.1
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=54.231.236.233
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=3.5.28.119
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=16.182.104.217
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=3.5.21.141
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=3.5.20.192
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=52.216.44.9
+add comment="github" name="github-production-user-asset-6210df.s3.amazonaws.com" type=A address=54.231.134.81
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=54.231.224.169
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=52.217.137.169
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=3.5.0.129
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=54.231.204.121
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=3.5.30.27
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=16.15.217.255
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=3.5.28.136
+add comment="github" name="github-production-repository-file-5c1aeb.s3.amazonaws.com" type=A address=52.216.219.145
+add comment="github" name="githubstatus.com" type=A address=185.199.108.153
+add comment="github" name="githubstatus.com" type=A address=185.199.109.153
+add comment="github" name="githubstatus.com" type=A address=185.199.110.153
+add comment="github" name="githubstatus.com" type=A address=185.199.111.153
+add comment="github" name="github.community" type=A address=140.82.114.17
+add comment="github" name="media.githubusercontent.com" type=A address=185.199.108.133
+add comment="github" name="media.githubusercontent.com" type=A address=185.199.109.133
+add comment="github" name="media.githubusercontent.com" type=A address=185.199.110.133
+add comment="github" name="media.githubusercontent.com" type=A address=185.199.111.133
+add comment="github" name="media.githubusercontent.com" type=AAAA address=2606:50c0:8000::154
+add comment="github" name="media.githubusercontent.com" type=AAAA address=2606:50c0:8001::154
+add comment="github" name="media.githubusercontent.com" type=AAAA address=2606:50c0:8002::154
+add comment="github" name="media.githubusercontent.com" type=AAAA address=2606:50c0:8003::154
