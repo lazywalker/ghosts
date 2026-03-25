@@ -234,7 +234,7 @@ add address=2603:1030:9:52c::/63 list=github-list-all
 add address=2603:1030:9:52e::/64 list=github-list-all
 add address=2603:1030:9:80::/59 list=github-list-all
 add address=2603:1030:9:86c::/63 list=github-list-all
-add address=2603:1030:9:87c::/64 list=github-list-all
+add address=2603:1030:9:87c::/63 list=github-list-all
 add address=2603:1030:9:100::/64 list=github-list-all
 add address=2603:1030:9:104::/62 list=github-list-all
 add address=2603:1030:9:108::/61 list=github-list-all
@@ -693,10 +693,8 @@ add address=2603:1030:401:a90::/63 list=github-list-all
 add address=2603:1030:401:a93::/64 list=github-list-all
 add address=2603:1030:401:a94::/62 list=github-list-all
 add address=2603:1030:401:a98::/61 list=github-list-all
-add address=2603:1030:401:aa0::/60 list=github-list-all
-add address=2603:1030:401:ab0::/61 list=github-list-all
-add address=2603:1030:401:ab8::/63 list=github-list-all
-add address=2603:1030:401:aba::/64 list=github-list-all
+add address=2603:1030:401:aa0::/59 list=github-list-all
+add address=2603:1030:401:ac0::/63 list=github-list-all
 add address=2603:1030:401:b0::/60 list=github-list-all
 add address=2603:1030:401:c0::/58 list=github-list-all
 add address=2603:1030:402::/47 list=github-list-all
@@ -737,6 +735,7 @@ add address=2603:1030:804:5c0::/59 list=github-list-all
 add address=2603:1030:804:5e0::/60 list=github-list-all
 add address=2603:1030:804:5f0::/61 list=github-list-all
 add address=2603:1030:804:5f8::/63 list=github-list-all
+add address=2603:1030:804:5fa::/64 list=github-list-all
 add address=2603:1030:804:22c::/64 list=github-list-all
 add address=2603:1030:804:26a::/63 list=github-list-all
 add address=2603:1030:804:26c::/62 list=github-list-all
