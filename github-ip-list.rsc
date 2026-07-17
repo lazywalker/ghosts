@@ -1,70 +1,70 @@
 # Auto-generated MikroTik address list – GitHub IPs
 /ip firewall address-list
-add address=185.199.109.215/32 list=github-list
-add address=185.199.110.215/32 list=github-list
-add address=185.199.108.215/32 list=github-list
-add address=185.199.111.215/32 list=github-list
-add address=140.82.113.21/32 list=github-list
-add address=185.199.108.133/32 list=github-list
-add address=185.199.111.133/32 list=github-list
-add address=185.199.110.133/32 list=github-list
-add address=185.199.109.133/32 list=github-list
-add address=140.248.145.194/32 list=github-list
-add address=140.82.113.4/32 list=github-list
-add address=185.199.108.153/32 list=github-list
-add address=185.199.109.153/32 list=github-list
-add address=185.199.110.153/32 list=github-list
-add address=185.199.111.153/32 list=github-list
-add address=140.82.112.3/32 list=github-list
-add address=140.82.113.5/32 list=github-list
-add address=140.82.112.10/32 list=github-list
-add address=16.15.183.57/32 list=github-list
-add address=52.217.139.113/32 list=github-list
-add address=52.217.69.140/32 list=github-list
-add address=16.15.207.142/32 list=github-list
-add address=16.15.228.47/32 list=github-list
-add address=16.15.253.103/32 list=github-list
-add address=54.231.133.97/32 list=github-list
-add address=52.217.205.41/32 list=github-list
-add address=54.231.198.97/32 list=github-list
-add address=54.231.197.9/32 list=github-list
-add address=54.231.231.65/32 list=github-list
-add address=16.15.229.255/32 list=github-list
-add address=54.231.168.225/32 list=github-list
-add address=16.15.229.14/32 list=github-list
-add address=52.217.125.201/32 list=github-list
-add address=52.217.225.113/32 list=github-list
-add address=16.15.253.215/32 list=github-list
-add address=16.15.238.129/32 list=github-list
-add address=16.15.207.32/32 list=github-list
-add address=54.231.162.145/32 list=github-list
-add address=54.231.230.233/32 list=github-list
-add address=16.15.253.212/32 list=github-list
-add address=54.231.202.145/32 list=github-list
-add address=16.15.254.106/32 list=github-list
-add address=16.15.229.71/32 list=github-list
-add address=52.216.43.65/32 list=github-list
-add address=16.15.254.156/32 list=github-list
-add address=16.15.244.210/32 list=github-list
-add address=16.15.183.125/32 list=github-list
-add address=54.231.226.121/32 list=github-list
-add address=52.217.226.129/32 list=github-list
-add address=54.231.233.169/32 list=github-list
-add address=16.15.238.14/32 list=github-list
-add address=16.15.254.153/32 list=github-list
-add address=16.182.97.129/32 list=github-list
-add address=16.15.245.172/32 list=github-list
-add address=16.15.212.254/32 list=github-list
-add address=52.217.200.57/32 list=github-list
-add address=16.15.245.242/32 list=github-list
-add address=52.217.118.137/32 list=github-list
-add address=140.82.114.18/32 list=github-list
+:do {add address=185.199.111.215/32 list=github-list} on-error={}
+:do {add address=185.199.109.215/32 list=github-list} on-error={}
+:do {add address=185.199.110.215/32 list=github-list} on-error={}
+:do {add address=185.199.108.215/32 list=github-list} on-error={}
+:do {add address=140.82.114.22/32 list=github-list} on-error={}
+:do {add address=185.199.108.133/32 list=github-list} on-error={}
+:do {add address=185.199.109.133/32 list=github-list} on-error={}
+:do {add address=185.199.110.133/32 list=github-list} on-error={}
+:do {add address=185.199.111.133/32 list=github-list} on-error={}
+:do {add address=151.101.201.194/32 list=github-list} on-error={}
+:do {add address=140.82.116.4/32 list=github-list} on-error={}
+:do {add address=185.199.110.153/32 list=github-list} on-error={}
+:do {add address=185.199.108.153/32 list=github-list} on-error={}
+:do {add address=185.199.109.153/32 list=github-list} on-error={}
+:do {add address=185.199.111.153/32 list=github-list} on-error={}
+:do {add address=140.82.116.3/32 list=github-list} on-error={}
+:do {add address=140.82.116.6/32 list=github-list} on-error={}
+:do {add address=140.82.116.10/32 list=github-list} on-error={}
+:do {add address=16.15.214.200/32 list=github-list} on-error={}
+:do {add address=16.15.223.209/32 list=github-list} on-error={}
+:do {add address=16.182.32.193/32 list=github-list} on-error={}
+:do {add address=52.217.132.73/32 list=github-list} on-error={}
+:do {add address=16.15.207.63/32 list=github-list} on-error={}
+:do {add address=16.15.199.223/32 list=github-list} on-error={}
+:do {add address=16.182.102.169/32 list=github-list} on-error={}
+:do {add address=52.217.116.1/32 list=github-list} on-error={}
+:do {add address=16.182.105.137/32 list=github-list} on-error={}
+:do {add address=16.15.223.217/32 list=github-list} on-error={}
+:do {add address=16.15.228.152/32 list=github-list} on-error={}
+:do {add address=54.231.199.49/32 list=github-list} on-error={}
+:do {add address=54.231.165.113/32 list=github-list} on-error={}
+:do {add address=52.216.220.33/32 list=github-list} on-error={}
+:do {add address=52.217.192.145/32 list=github-list} on-error={}
+:do {add address=52.216.215.49/32 list=github-list} on-error={}
+:do {add address=52.217.74.172/32 list=github-list} on-error={}
+:do {add address=54.231.138.249/32 list=github-list} on-error={}
+:do {add address=16.15.183.5/32 list=github-list} on-error={}
+:do {add address=16.15.191.225/32 list=github-list} on-error={}
+:do {add address=52.216.40.209/32 list=github-list} on-error={}
+:do {add address=52.217.172.121/32 list=github-list} on-error={}
+:do {add address=52.217.174.241/32 list=github-list} on-error={}
+:do {add address=16.182.106.241/32 list=github-list} on-error={}
+:do {add address=16.15.212.161/32 list=github-list} on-error={}
+:do {add address=16.15.223.170/32 list=github-list} on-error={}
+:do {add address=52.216.221.193/32 list=github-list} on-error={}
+:do {add address=16.15.247.154/32 list=github-list} on-error={}
+:do {add address=16.182.38.97/32 list=github-list} on-error={}
+:do {add address=16.15.213.237/32 list=github-list} on-error={}
+:do {add address=52.216.56.9/32 list=github-list} on-error={}
+:do {add address=52.217.138.121/32 list=github-list} on-error={}
+:do {add address=16.15.247.159/32 list=github-list} on-error={}
+:do {add address=52.217.172.241/32 list=github-list} on-error={}
+:do {add address=16.15.244.250/32 list=github-list} on-error={}
+:do {add address=54.231.224.137/32 list=github-list} on-error={}
+:do {add address=16.15.191.31/32 list=github-list} on-error={}
+:do {add address=52.217.165.217/32 list=github-list} on-error={}
+:do {add address=16.15.207.10/32 list=github-list} on-error={}
+:do {add address=16.15.214.112/32 list=github-list} on-error={}
+:do {add address=140.82.112.18/32 list=github-list} on-error={}
 /ipv6 firewall address-list
-add address=2606:50c0:8002::215/128 list=github-list
-add address=2606:50c0:8003::215/128 list=github-list
-add address=2606:50c0:8000::215/128 list=github-list
-add address=2606:50c0:8001::215/128 list=github-list
-add address=2606:50c0:8001::154/128 list=github-list
-add address=2606:50c0:8002::154/128 list=github-list
-add address=2606:50c0:8003::154/128 list=github-list
-add address=2606:50c0:8000::154/128 list=github-list
+:do {add address=2606:50c0:8001::215/128 list=github-list} on-error={}
+:do {add address=2606:50c0:8002::215/128 list=github-list} on-error={}
+:do {add address=2606:50c0:8003::215/128 list=github-list} on-error={}
+:do {add address=2606:50c0:8000::215/128 list=github-list} on-error={}
+:do {add address=2606:50c0:8000::154/128 list=github-list} on-error={}
+:do {add address=2606:50c0:8001::154/128 list=github-list} on-error={}
+:do {add address=2606:50c0:8002::154/128 list=github-list} on-error={}
+:do {add address=2606:50c0:8003::154/128 list=github-list} on-error={}
