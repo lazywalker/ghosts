@@ -435,6 +435,7 @@ add address=2603:1030:9:b8::/63 list=github-list-all
 add address=2603:1030:9:bb::/64 list=github-list-all
 add address=2603:1030:9:bc::/62 list=github-list-all
 add address=2603:1030:9:c0::/60 list=github-list-all
+add address=2603:1030:9:d2::/64 list=github-list-all
 add address=2603:1030:9:d6::/63 list=github-list-all
 add address=2603:1030:9:d8::/61 list=github-list-all
 add address=2603:1030:9:e0::/59 list=github-list-all
@@ -556,8 +557,6 @@ add address=2603:1030:401:5f4::/63 list=github-list-all
 add address=2603:1030:401:5f6::/64 list=github-list-all
 add address=2603:1030:401:5fd::/64 list=github-list-all
 add address=2603:1030:401:5fe::/63 list=github-list-all
-add address=2603:1030:401:6b::/64 list=github-list-all
-add address=2603:1030:401:6c::/62 list=github-list-all
 add address=2603:1030:401:7a0::/61 list=github-list-all
 add address=2603:1030:401:7a8::/63 list=github-list-all
 add address=2603:1030:401:7b1::/64 list=github-list-all
@@ -659,9 +658,8 @@ add address=2603:1030:401:57e::/64 list=github-list-all
 add address=2603:1030:401:58::/64 list=github-list-all
 add address=2603:1030:401:58c::/63 list=github-list-all
 add address=2603:1030:401:58e::/64 list=github-list-all
-add address=2603:1030:401:60::/62 list=github-list-all
+add address=2603:1030:401:60::/60 list=github-list-all
 add address=2603:1030:401:60c::/62 list=github-list-all
-add address=2603:1030:401:64::/64 list=github-list-all
 add address=2603:1030:401:70::/62 list=github-list-all
 add address=2603:1030:401:70b::/64 list=github-list-all
 add address=2603:1030:401:70c::/63 list=github-list-all
@@ -756,6 +754,7 @@ add address=2603:1030:401:430::/62 list=github-list-all
 add address=2603:1030:401:434::/64 list=github-list-all
 add address=2603:1030:401:437::/64 list=github-list-all
 add address=2603:1030:401:439::/64 list=github-list-all
+add address=2603:1030:401:440::/62 list=github-list-all
 add address=2603:1030:401:460::/61 list=github-list-all
 add address=2603:1030:401:468::/62 list=github-list-all
 add address=2603:1030:401:470::/61 list=github-list-all
