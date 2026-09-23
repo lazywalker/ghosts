@@ -1,5 +1,6 @@
 # Auto-generated MikroTik address list – GitHub IPs
 /ip firewall address-list
+add address=3.219.87.128/32 list=github-list-all
 add address=4.148.0.0/16 list=github-list-all
 add address=4.149.0.0/18 list=github-list-all
 add address=4.149.64.0/19 list=github-list-all
@@ -482,6 +483,8 @@ add address=13.105.220.160/28 list=github-list-all
 add address=13.105.220.176/29 list=github-list-all
 add address=13.105.220.184/30 list=github-list-all
 add address=13.105.220.188/31 list=github-list-all
+add address=18.214.123.177/32 list=github-list-all
+add address=18.233.87.154/32 list=github-list-all
 add address=20.1.128.0/17 list=github-list-all
 add address=20.3.0.0/16 list=github-list-all
 add address=20.4.0.0/16 list=github-list-all
@@ -1849,6 +1852,11 @@ add address=23.102.202.0/24 list=github-list-all
 add address=23.102.203.0/24 list=github-list-all
 add address=23.102.204.0/22 list=github-list-all
 add address=23.102.208.0/20 list=github-list-all
+add address=34.202.115.28/32 list=github-list-all
+add address=34.202.143.207/32 list=github-list-all
+add address=34.223.158.89/32 list=github-list-all
+add address=34.237.233.57/32 list=github-list-all
+add address=35.174.28.24/32 list=github-list-all
 add address=40.64.64.0/18 list=github-list-all
 add address=40.64.128.0/21 list=github-list-all
 add address=40.64.144.0/27 list=github-list-all
@@ -3197,6 +3205,7 @@ add address=40.126.62.128/25 list=github-list-all
 add address=40.126.202.0/24 list=github-list-all
 add address=40.127.96.0/20 list=github-list-all
 add address=40.127.128.0/17 list=github-list-all
+add address=44.228.147.113/32 list=github-list-all
 add address=48.192.0.0/17 list=github-list-all
 add address=48.192.128.0/18 list=github-list-all
 add address=48.192.192.0/19 list=github-list-all
@@ -3569,6 +3578,7 @@ add address=48.221.128.0/17 list=github-list-all
 add address=48.222.0.0/17 list=github-list-all
 add address=48.222.128.0/17 list=github-list-all
 add address=48.223.128.0/17 list=github-list-all
+add address=50.16.210.73/32 list=github-list-all
 add address=50.85.0.0/17 list=github-list-all
 add address=50.85.128.0/18 list=github-list-all
 add address=50.85.192.0/19 list=github-list-all
@@ -3622,6 +3632,9 @@ add address=51.141.160.0/19 list=github-list-all
 add address=51.143.0.0/17 list=github-list-all
 add address=51.144.0.0/16 list=github-list-all
 add address=51.145.128.0/17 list=github-list-all
+add address=52.7.11.124/32 list=github-list-all
+add address=52.35.47.185/32 list=github-list-all
+add address=52.40.23.199/32 list=github-list-all
 add address=52.96.11.0/24 list=github-list-all
 add address=52.101.0.0/22 list=github-list-all
 add address=52.101.4.0/22 list=github-list-all
@@ -4362,6 +4375,7 @@ add address=52.190.128.0/17 list=github-list-all
 add address=52.191.0.0/17 list=github-list-all
 add address=52.191.128.0/18 list=github-list-all
 add address=52.191.192.0/18 list=github-list-all
+add address=52.200.10.122/32 list=github-list-all
 add address=52.224.0.0/16 list=github-list-all
 add address=52.225.0.0/17 list=github-list-all
 add address=52.225.128.0/21 list=github-list-all
@@ -4551,6 +4565,9 @@ add address=52.254.128.0/17 list=github-list-all
 add address=52.255.0.0/19 list=github-list-all
 add address=52.255.64.0/18 list=github-list-all
 add address=52.255.128.0/17 list=github-list-all
+add address=54.211.170.155/32 list=github-list-all
+add address=54.235.15.98/32 list=github-list-all
+add address=54.245.203.201/32 list=github-list-all
 add address=57.150.0.0/23 list=github-list-all
 add address=57.150.2.0/23 list=github-list-all
 add address=57.150.4.0/23 list=github-list-all
@@ -5216,6 +5233,9 @@ add address=94.245.123.176/28 list=github-list-all
 add address=98.64.0.0/16 list=github-list-all
 add address=98.71.0.0/17 list=github-list-all
 add address=98.71.128.0/17 list=github-list-all
+add address=98.89.53.239/32 list=github-list-all
+add address=100.62.132.232/32 list=github-list-all
+add address=100.62.139.158/32 list=github-list-all
 add address=104.40.0.0/17 list=github-list-all
 add address=104.40.128.0/17 list=github-list-all
 add address=104.41.64.0/18 list=github-list-all
