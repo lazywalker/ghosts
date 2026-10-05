@@ -250,6 +250,7 @@ add address=2603:1030:9:2cc::/63 list=github-list-all
 add address=2603:1030:9:2d4::/62 list=github-list-all
 add address=2603:1030:9:2d8::/61 list=github-list-all
 add address=2603:1030:9:2e0::/63 list=github-list-all
+add address=2603:1030:9:2e4::/62 list=github-list-all
 add address=2603:1030:9:2e8::/61 list=github-list-all
 add address=2603:1030:9:2f0::/60 list=github-list-all
 add address=2603:1030:9:4::/62 list=github-list-all
@@ -437,7 +438,7 @@ add address=2603:1030:9:bc::/62 list=github-list-all
 add address=2603:1030:9:c0::/60 list=github-list-all
 add address=2603:1030:9:d1::/64 list=github-list-all
 add address=2603:1030:9:d2::/64 list=github-list-all
-add address=2603:1030:9:d6::/63 list=github-list-all
+add address=2603:1030:9:d4::/62 list=github-list-all
 add address=2603:1030:9:d8::/61 list=github-list-all
 add address=2603:1030:9:e0::/59 list=github-list-all
 add address=2603:1030:10::/47 list=github-list-all
@@ -875,7 +876,10 @@ add address=2603:1030:401:afd::/64 list=github-list-all
 add address=2603:1030:401:afe::/63 list=github-list-all
 add address=2603:1030:401:b0::/60 list=github-list-all
 add address=2603:1030:401:b00::/60 list=github-list-all
+add address=2603:1030:401:b1f::/64 list=github-list-all
 add address=2603:1030:401:b10::/61 list=github-list-all
+add address=2603:1030:401:b20::/62 list=github-list-all
+add address=2603:1030:401:b24::/64 list=github-list-all
 add address=2603:1030:401:c::/63 list=github-list-all
 add address=2603:1030:401:c0::/60 list=github-list-all
 add address=2603:1030:401:d0::/62 list=github-list-all
@@ -1229,7 +1233,8 @@ add address=2603:1061:100c:e8::/63 list=github-list-all
 add address=2603:1061:101a::/57 list=github-list-all
 add address=2603:1061:101a:80::/58 list=github-list-all
 add address=2603:1061:101a:c0::/59 list=github-list-all
-add address=2603:1061:101a:e0::/64 list=github-list-all
+add address=2603:1061:101a:e0::/63 list=github-list-all
+add address=2603:1061:101a:e2::/64 list=github-list-all
 add address=2603:1061:170a::/48 list=github-list-all
 add address=2603:1061:170d::/48 list=github-list-all
 add address=2603:1061:170e::/48 list=github-list-all
