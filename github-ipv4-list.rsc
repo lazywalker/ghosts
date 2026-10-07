@@ -196,6 +196,9 @@ add address=9.163.0.0/16 list=github-list-all
 add address=9.169.0.0/17 list=github-list-all
 add address=9.169.128.0/17 list=github-list-all
 add address=9.234.0.0/17 list=github-list-all
+add address=9.234.98.160/28 list=github-list-all
+add address=9.234.98.176/28 list=github-list-all
+add address=9.234.106.48/28 list=github-list-all
 add address=9.234.128.0/17 list=github-list-all
 add address=13.64.0.0/16 list=github-list-all
 add address=13.65.0.0/16 list=github-list-all
