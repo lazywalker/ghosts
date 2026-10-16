@@ -1,5 +1,7 @@
 # Auto-generated MikroTik address list – GitHub IPs
 /ip firewall address-list
+add address=3.41.210.0/24 list=github-list-all
+add address=3.42.157.0/24 list=github-list-all
 add address=3.219.87.128/32 list=github-list-all
 add address=4.148.0.0/16 list=github-list-all
 add address=4.149.0.0/18 list=github-list-all
