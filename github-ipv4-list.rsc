@@ -1726,6 +1726,10 @@ add address=20.242.128.0/17 list=github-list-all
 add address=20.245.0.0/16 list=github-list-all
 add address=20.246.0.0/17 list=github-list-all
 add address=20.246.128.0/17 list=github-list-all
+add address=20.250.119.67/32 list=github-list-all
+add address=20.250.119.68/32 list=github-list-all
+add address=20.250.119.72/32 list=github-list-all
+add address=20.250.119.73/32 list=github-list-all
 add address=20.252.0.0/17 list=github-list-all
 add address=20.253.0.0/17 list=github-list-all
 add address=20.253.128.0/17 list=github-list-all
