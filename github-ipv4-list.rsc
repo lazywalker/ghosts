@@ -18,6 +18,8 @@ add address=4.151.0.0/16 list=github-list-all
 add address=4.152.0.0/15 list=github-list-all
 add address=4.154.0.0/15 list=github-list-all
 add address=4.156.0.0/15 list=github-list-all
+add address=4.159.108.160/28 list=github-list-all
+add address=4.159.197.192/28 list=github-list-all
 add address=4.172.0.0/15 list=github-list-all
 add address=4.174.0.0/16 list=github-list-all
 add address=4.175.0.0/16 list=github-list-all
@@ -55,6 +57,7 @@ add address=4.229.0.0/17 list=github-list-all
 add address=4.229.128.0/17 list=github-list-all
 add address=4.231.0.0/17 list=github-list-all
 add address=4.231.128.0/17 list=github-list-all
+add address=4.234.31.32/28 list=github-list-all
 add address=4.236.0.0/17 list=github-list-all
 add address=4.236.95.112/28 list=github-list-all
 add address=4.236.128.0/17 list=github-list-all
@@ -515,6 +518,8 @@ add address=20.23.0.0/16 list=github-list-all
 add address=20.25.0.0/17 list=github-list-all
 add address=20.25.128.0/18 list=github-list-all
 add address=20.25.192.0/18 list=github-list-all
+add address=20.26.58.32/28 list=github-list-all
+add address=20.26.68.64/28 list=github-list-all
 add address=20.26.156.210/32 list=github-list-all
 add address=20.26.156.211/32 list=github-list-all
 add address=20.26.156.213/32 list=github-list-all
