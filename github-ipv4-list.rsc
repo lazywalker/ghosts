@@ -1513,10 +1513,6 @@ add address=20.200.245.244/32 list=github-list-all
 add address=20.200.245.245/32 list=github-list-all
 add address=20.200.245.247/32 list=github-list-all
 add address=20.200.245.248/32 list=github-list-all
-add address=20.201.28.144/32 list=github-list-all
-add address=20.201.28.148/32 list=github-list-all
-add address=20.201.28.151/32 list=github-list-all
-add address=20.201.28.152/32 list=github-list-all
 add address=20.201.135.0/24 list=github-list-all
 add address=20.201.136.0/24 list=github-list-all
 add address=20.201.147.0/24 list=github-list-all
